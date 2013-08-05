@@ -23,7 +23,7 @@ if (DFPORT == '80' || DPORT == '443') {
     define('CDN', DFTYPE . CN . DS . DS . DFILE . DS . DEMOFOLDER . DFPATH . DS);
 } else {
     define('DOMAIN', DTYPE . CN . DS . DS . DNAME . CN . DPORT . DS . DEMOFOLDER);
-    define('CDN', DFTYPE . CN . DS . DS . DFILE . CN . DFPORT . DS . DEMOFOLDER . DFPATH . DS);
+    define('CDN', DFTYPE . CN . DS . DS . DFILE . CN . DFPORT . DS . DEMOFOLDER . DFPATH );
 }
 
 

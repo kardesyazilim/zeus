@@ -11,7 +11,7 @@ $mdbType = 'mysql'; //master db type
 $mdbPort = '3358'; //master db default port ex:3358 mysql
 $mdbSRV  = 'localhost';//master db default domain localhost
 $mdbUSR = 'root';//master db user
-$mdbPASS ='root';//master db pass
+$mdbPASS ='qweytr';//master db pass
 $mdbNAME = 'markado_master';//master db name
 $mdbC = 'true';//master db cache default true !important
 $mdbCSIZE = '10';//master db cache size default 10mb
@@ -29,13 +29,13 @@ $sdbCTIME = '9600';//slave db cache size true !important
 
 
 $mDomain = 'localhost';//default domain
-$mPort = '8888';//default port 443,80
+$mPort = '80';//default port 443,80
 $mType = 'http';//default protokol http,https
 $cdnDomain = 'localhost';//cdn domain name default localhost
-$cdnPort = '8888';//default port 80,443
+$cdnPort = '80';//default port 80,443
 $cdnType = 'http';//default http (ftp,sftp,http,https);
 $cdnFolder = 'media';//default media folder
-$demoFolder = 'zeus/';
+$demoFolder = '';
 
 $adminUrl = '3elma2armut'; //default admin url 
 $mobilUrl = 'mobil';

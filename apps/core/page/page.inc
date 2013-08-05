@@ -64,7 +64,7 @@ class zPage {
         echo '<div class="row-fluid">';
         echo '<div class="span4">';
 
-        echo '<a href="' . $web_site->co_url . '?ref=logo"><img src="' . $web_site->co_fileurl . '/media/main/img/' . $web_config->co_logo_web . '" alt="' . $web_config->co_name . '"/></a>';
+        echo '<a href="' . $web_site->co_url . 'ref/logo"><img src="' . $web_site->co_fileurl . '/media/main/img/' . $web_config->co_logo_web . '" alt="' . $web_config->co_name . '"/></a>';
         echo '</div>';
         echo '<div class="span8">';
         /* echo '<select class="qs">';
