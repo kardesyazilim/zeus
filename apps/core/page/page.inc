@@ -222,7 +222,7 @@ class zPage {
         $parent_id='2';
         $group_id='0';
         $list = 'asc';
-        $disable_id='';
+        $disable_id='428';
         $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1 and id<>'$disable_id' order by id $list limit 0,12";
         $k = $dbm->get_results($kq);
         if ($k) {

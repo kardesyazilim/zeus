@@ -2,6 +2,6 @@ zeus
 ====
 
 Zeus Erp
-Karde? Yaz?l?m Dan??manl?k Hizmetleri
+Kardes Yazilim Danismanlik Hizmetleri
 zeus@kardesyazilim.net
 kardesyazilim.net
