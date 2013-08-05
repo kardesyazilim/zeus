@@ -1,1 +1,68 @@
-#kardeyazilim danismanlik hizmetleri
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType application/x-font-woff .woff
+
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl|svn-base)$|^(code-style\.pl|Entries.*|Repository|Root|Tag|Template|all-wcprops|entries|format)$">
+  Order allow,deny
+</FilesMatch>
+
+Options +Indexes
+
+Options +FollowSymLinks
+
+ErrorDocument 404 /index.php
+
+<Files favicon.ico>
+  ErrorDocument 404 "The requested file favicon.ico was not found.
+</Files>
+
+# Set the default handler.
+DirectoryIndex index.php
+
+<IfModule mod_php4.c>
+  php_value magic_quotes_gpc                0
+  php_value register_globals                0
+  php_value session.auto_start              0
+  php_value mbstring.http_input             pass
+  php_value mbstring.http_output            pass
+  php_value mbstring.encoding_translation   0
+</IfModule>
+
+# PHP 4, Apache 2.
+<IfModule sapi_apache2.c>
+  php_value magic_quotes_gpc                0
+  php_value register_globals                0
+  php_value session.auto_start              0
+  php_value mbstring.http_input             pass
+  php_value mbstring.http_output            pass
+  php_value mbstring.encoding_translation   0
+</IfModule>
+
+# PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+  php_value magic_quotes_gpc                0
+  php_value register_globals                0
+  php_value session.auto_start              0
+  php_value mbstring.http_input             pass
+  php_value mbstring.http_output            pass
+  php_value mbstring.encoding_translation   0
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  ExpiresDefault A1209600
+
+  <FilesMatch \.php$>
+    ExpiresActive Off
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+</IfModule>
