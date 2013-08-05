@@ -16,7 +16,8 @@ class zNav {
     function main($dbm) {
         $groupID='0 ';
         $parent_id='2';
-        $catListQuery = "select * from category_list  where parent_id='$parent_id' and group_id ='$groupID' and status=1  order by id desc limit 0,12";
+        $list = 'asc';
+        $catListQuery = "select * from category_list  where parent_id='$parent_id' and group_id ='$groupID' and status=1  order by id $list limit 0,12";
         $catList = $dbm->get_results($catListQuery);
 
         echo '<div id="na" class="hidden-tablet hidden-phone">';

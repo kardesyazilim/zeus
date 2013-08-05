@@ -125,7 +125,7 @@ TABLE OF CONTENTS
 }
 .megamenu > li > a {
     font-size:1em;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     outline:0;
     text-decoration:none;
     display:block;

@@ -64,7 +64,7 @@ class zPage {
         echo '<div class="row-fluid">';
         echo '<div class="span4">';
 
-        echo '<a href="' . $web_site->co_url . 'ref/logo"><img src="' . $web_site->co_fileurl . '/media/main/img/' . $web_config->co_logo_web . '" alt="' . $web_config->co_name . '"/></a>';
+        echo '<a href="' . $web_site->co_url . 'ref/logo"><img src="' . $web_site->co_fileurl . 'media/main/img/' . $web_config->co_logo_web . '" alt="' . $web_config->co_name . '"/></a>';
         echo '</div>';
         echo '<div class="span8">';
         /* echo '<select class="qs">';
@@ -200,7 +200,8 @@ class zPage {
         echo '<ul>';
         $parent_id='5';
         $group_id='0';
-        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1  order by id desc limit 0,12";
+        $list = 'asc';
+        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1  order by id $list limit 0,12";
         
         
         $k = $dbm->get_results($kq);
@@ -220,8 +221,9 @@ class zPage {
         echo '<ul>';
         $parent_id='2';
         $group_id='0';
+        $list = 'asc';
         $disable_id='';
-        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1 and id<>'$disable_id' order by id desc limit 0,12";
+        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1 and id<>'$disable_id' order by id $list limit 0,12";
         $k = $dbm->get_results($kq);
         if ($k) {
             foreach ($k as $t) {
@@ -240,7 +242,8 @@ class zPage {
         echo '<ul>';
         $parent_id='6';
         $group_id='0';
-        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1  order by id desc limit 0,12";
+        $list = 'asc';
+        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1  order by id $list limit 0,12";
         $k = $dbm->get_results($kq);
         if ($k) {
             foreach ($k as $t) {
