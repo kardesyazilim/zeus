@@ -28,10 +28,10 @@ $sdbCSIZE = '10';//slave db cache size default 10mb
 $sdbCTIME = '9600';//slave db cache size true !important
 
 
-$mDomain = 'localhost';//default domain
+$mDomain = '192.168.1.159';//default domain
 $mPort = '80';//default port 443,80
 $mType = 'http';//default protokol http,https
-$cdnDomain = 'localhost';//cdn domain name default localhost
+$cdnDomain = '192.168.1.159';//cdn domain name default localhost
 $cdnPort = '80';//default port 80,443
 $cdnType = 'http';//default http (ftp,sftp,http,https);
 $cdnFolder = 'media';//default media folder

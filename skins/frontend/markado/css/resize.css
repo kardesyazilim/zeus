@@ -1,0 +1,28 @@
+/* 
+    Document   : resize
+    Created on : Aug 5, 2013, 5:12:08 PM
+    Author     : polemarch
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*768 x 1024*/
+
+@media only screen and (max-width: 768px) {
+    /* For general iPad layouts */
+    .megamenu > li {
+        border: 1px solid black;
+        
+    }
+    
+    .megamenu > li > a {
+        font-size:0.6em;
+        margin-top: -10px;
+        
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* For general iPad layouts */
+
+
+}

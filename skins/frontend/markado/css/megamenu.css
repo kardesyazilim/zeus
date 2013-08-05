@@ -108,7 +108,7 @@ TABLE OF CONTENTS
     margin:0;
     font-family:'HelveticaNeue',Sans-Serif;
     font-weight: bold;
-    font-size:1em;
+    font-size:1.2em;
     line-height:1;
 }
 .megamenu > li {
@@ -124,8 +124,7 @@ TABLE OF CONTENTS
     transition: background 0.5s ease;
 }
 .megamenu > li > a {
-    font-size:1em;
-    /*text-transform:uppercase;*/
+ 
     outline:0;
     text-decoration:none;
     display:block;
@@ -1387,3 +1386,5 @@ body {
 
 
 }
+
+

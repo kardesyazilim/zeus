@@ -27,6 +27,7 @@ class zPage {
                 } else {
                     echo '<div id="cpi" >';
                     echo '<div class="container">';
+                   echo '<div class="row-fluid">';
                     echo '<div class="span12" style="margin:0;">';
                     echo '<div class="alert alert-block">';
                     echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
@@ -38,11 +39,13 @@ class zPage {
                     echo '</div>';
                     echo '</div>';
                     echo '</div>';
+                    echo '</div>';
                 }
             } else {
                 echo '<div id="cpi">';
                 echo '<div class="container">';
-                echo '<div class="span12">';
+                echo '<div class="row-fluid">';
+                echo '<div class="span12" style="margin:0;">';
                 echo '<div class="alert alert-block">';
                 echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
                 echo '<strong>!Bilgi </strong>';
@@ -52,9 +55,10 @@ class zPage {
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
+                echo '</div>';
             }
         }
-        $demomod='1';
+        $demomod='0';
         if($demomod=='1'){
             echo '<div id="dm">';
             echo '<div class="container">';
@@ -74,7 +78,8 @@ class zPage {
         $web_config = "select * from web_config where co_id='$web_site->id'";
         $web_config = $dbm->get_row($web_config);
 
-        echo '<div id="ha" class="hidden-tabet hidden-phone">';
+        //echo '<div id="ha" class="hidden-tabet hidden-phone">';
+        echo '<div id="ha">';
         echo '<div class="container">';
         echo '<div class="row-fluid">';
         echo '<div class="span4">';
@@ -209,7 +214,7 @@ class zPage {
         echo '<div class="row-fluid ft">';
         echo '<div class="span3 ftm">';
         echo '</div><!--span3-->';
-        echo '<div class="span9" style="margin:0;margin-left:25px;">';
+        echo '<div class="span9" style="margin:0;">';
         echo '<div class="span3 fbox">';
         echo '<h1>Kurumsal</h1>';
         echo '<ul>';
@@ -295,16 +300,16 @@ class zPage {
         echo '</div><!--span3-->';
         echo '<div class="span12 bjk" style="margin:0;">';
         echo '<div class="security"></div>';
-        echo '<div class="yapikredi" ></div>';
-        echo '<div class="maximum" ></div>';
-        echo '<div class="bonus" ></div>';
-        echo '<div class="axess" ></div>';
-        echo '<div class="advantage" ></div>';
-        echo '<div class="cardfinans" ></div>';
-        echo '<div class="paraf" ></div>';
-        echo '<div class="visa" ></div>';
-        echo '<div class="master" ></div>';
-        echo '<div class="american" ></div>';
+        echo '<div class="yapikredi ml10" ></div>';
+        echo '<div class="maximum ml10" ></div>';
+        echo '<div class="bonus ml10" ></div>';
+        echo '<div class="axess ml10" ></div>';
+        echo '<div class="advantage ml10" ></div>';
+        echo '<div class="cardfinans ml10" ></div>';
+        echo '<div class="paraf ml10" ></div>';
+        echo '<div class="visa ml10" ></div>';
+        echo '<div class="master ml10" ></div>';
+        echo '<div class="american ml10" ></div>';
         echo '</div><!--span12-->';
         echo '<div class="span12 terms" style="margin:0">';
         echo '<strong>Yasal Uyarı : </strong> markado.com\'da kullanılan görseller, yazılı metinler ve diğer tüm içeriklerin telif hakları Markado Elektronik Hizmetler ve Tic. A.Ş.\'ye aittir. Bu sitede yer alan içerikler Markado Elektronik Hizmetler ve Tic. A.Ş\'nin izni olmadan basılı veya elektronik ortamda kesinlikle kullanılamaz ve çoğaltılamaz.';
@@ -318,7 +323,7 @@ class zPage {
         echo '<div class="container">';
         echo '<div class="row-fluid">';
         echo '<div class="span12">';
-        echo '<p class="text-left" style="margin:-20px  0 0 5px; font-size:0.9em; color:#898989;text-shadow: 2px 2px 2px #fff;">© Copyright 2012-'.date('Y').' Markado.com</p>';
+        echo '<p class="text-left copy">© Copyright 2012-'.date('Y').' Markado.com</p>';
         echo '<p class="text-right" style="margin:-20px 0 0 0;"><img src="'.DOMAIN.'media/main/img/gs.gif" /><img src="'.DOMAIN.'media/main/img/etrustlogo.gif" /></p>';
         echo '</div>';
         echo '</div>';

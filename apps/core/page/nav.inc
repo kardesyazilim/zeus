@@ -20,7 +20,8 @@ class zNav {
         $catListQuery = "select * from category_list  where parent_id='$parent_id' and group_id ='$groupID' and status=1  order by id $list limit 0,12";
         $catList = $dbm->get_results($catListQuery);
 
-        echo '<div id="na" class="hidden-tablet hidden-phone">';
+        //echo '<div id="na" class="hidden-tablet hidden-phone">';
+        echo '<div id="na">';
         echo '<div class="container">';
         echo '<div class="row-fluid">';
         echo '<div class="megamenu_container megamenu_dark_bar megamenu_light">';
