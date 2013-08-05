@@ -45,7 +45,7 @@ class zPage {
                 echo '<div class="span12">';
                 echo '<div class="alert alert-block">';
                 echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-                echo '<strong>Bilgi! </strong>';
+                echo '<strong>!Bilgi </strong>';
                 echo $c->body;
                 //<strong>Bilgi!</strong> Sizlere daha iyi hizmet verebilmek adına markado.com bilgisayarınızda kolaylık sağlayacak bir kaç cookie (Çerez) kaydetmek istiyor. Detaylı bilgi için <a href = "">cookie yazısı.</a>
                 echo '</div>';
@@ -53,6 +53,21 @@ class zPage {
                 echo '</div>';
                 echo '</div>';
             }
+        }
+        $demomod='1';
+        if($demomod=='1'){
+            echo '<div id="dm">';
+            echo '<div class="container">';
+            echo '<div class="row-fluid">';
+            echo '<div class="alert alert-error">';
+            echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            echo '<strong>!Uyarı : </strong>';
+            echo MAINTENANCE_MOD;
+            
+            echo '</div><!--alert-->';
+            echo '</div>';
+            echo '</div><!--container-->';
+            echo '</div><!--dm-->';
         }
         $web_site = "select * from web_site where id=1";
         $web_site = $dbm->get_row($web_site);
