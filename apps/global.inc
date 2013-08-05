@@ -71,4 +71,5 @@ define('LANGCODE', 'utf-8');
 define('ERRNAVCENTER_1','BU SİSTEMDE KATAGORİLENDİRİME BULUNMAMAKTADIR. DESTEK');
 define('ERRNAVLEFT_1','Bu sisteme ait hızlı kategorilendirme bulunmamaktadır.<a href="http://kardesyazilim.net/?company=markado&error=2">Destek</a>');
 define('ERRPAGEURL_1','açıklama yazısı');
+define('MAINTENANCE_MOD','Sistemde Şuanda Bakmım çalışması Yapılmaktadır.<a href="http://kardesyazilim.net/?company=markado&maintenance=1">Destek</a>');
 ?>
