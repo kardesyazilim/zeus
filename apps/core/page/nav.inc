@@ -80,7 +80,8 @@ class zNav {
     function left($dbm){
         $parent_id='3';
         $group_id='0';
-        $leftNavQuery = "select * from category_list where parent_id='$parent_id' and group_id='$group_id' and status='1' order by id desc limit 0,12 ";
+        $list = 'asc';
+        $leftNavQuery = "select * from category_list where parent_id='$parent_id' and group_id='$group_id' and status='1' order by id $list limit 0,12 ";
         $leftNav = $dbm->get_results($leftNavQuery);
         if($leftNav){
         echo '<ul class="ln">';

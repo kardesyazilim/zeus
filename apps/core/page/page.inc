@@ -264,7 +264,8 @@ class zPage {
         
         $parent_id='7';
         $group_id='0';
-        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1  order by id desc limit 0,12";
+        $list = 'asc';
+        $kq = "select * from category_list where group_id='$group_id' and parent_id='$parent_id' and status=1  order by id $list limit 0,12";
         
         $k = $dbm->get_results($kq);
         if ($k) {
