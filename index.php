@@ -40,6 +40,7 @@ if ($q[0] == '') {
     $h->css(0, 'bootstrap-responsive');
     $h->css(3, 'base');
     $h->css(3, 'megamenu');
+    $h->css(3, 'resize');
     $h->begin();
     $p->home($dbm, $c);
 
@@ -81,8 +82,8 @@ else {
     echo '<div class="alert alert-error">';
     //echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
     echo '<strong>Uyarı!</strong>';
-    echo 'Aradığınız '.$q[0].' urlli sayfa görüntülenemektedir. Açıklama : '.ERRPAGEURL_1;
-    echo '<p><a href="'.DOMAIN.'" title="">Anasayfa</a></p>';
+    echo 'Aradığınız ' . $q[0] . ' urlli sayfa görüntülenemektedir. Açıklama : ' . ERRPAGEURL_1;
+    echo '<p><a href="' . DOMAIN . '" title="">Anasayfa</a></p>';
     echo '</div>';
     echo '</div><!--span12-->';
     echo '</div>';
@@ -104,7 +105,6 @@ $(".carousel").carousel();
     $h->js(3, 'menu');
     $h->js(3, 'main');
     $h->end();
-
 }
 
 //class 
