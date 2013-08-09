@@ -55,11 +55,11 @@ class zNav {
                     foreach ($scatList as $scat) {
                     $subCatQuery ="select * from category_list where parent_id='$scat->id' and status='1'";
                     $subCatS = $dbm->get_results($subCatQuery);
-                    echo '<ul id="s_'.$scat->id.'">';
+                    echo '<ul id="s_'.$scat->id.'" class="sbn">';
                     foreach($subCatS as $subCat){
                         
                        // echo $subCat->id.'--'.$scat->id.'</br>';
-                        echo  '<li><a href="" title="'.$subCat->title.'">'.$subCat->title.'</a></li>';
+                        echo  '<li class="col_4 responsive_halfs mg"><a href="" title="'.$subCat->title.'">'.$subCat->title.'</a></li>';
                     }
                     echo '<ul>';
                     }

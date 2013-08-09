@@ -350,4 +350,9 @@ body{
 }
 .sbn li{
     display: inline;
+    background-color: #fff;
+}
+.mg{
+   
+    height: 100px;
 }
