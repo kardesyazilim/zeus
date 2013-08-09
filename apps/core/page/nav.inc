@@ -51,10 +51,11 @@ class zNav {
                          
                     </div>
                 <div class="col_3 responsive_halfs" >';
-                    echo '<ul id="s_' . $scat->id . '">';
+                    echo '<ul id="s_' . $scat->id . '" class="sbn">';
                     
                     foreach ($scatList as $scat) {
                         $sTlistquery = "select * from category_list where parent_id='$scat->id' and status=1";
+                        
                         $sTlist = $dbm->get_results($sTlistquery);
                         if($sTlist){
                         foreach ($sTlist as $sT) {
@@ -63,7 +64,7 @@ class zNav {
                         }
                     }
                     echo '</ul>';
-                    echo '<p>----</p>';
+                   
                     echo '</div>
                 
     </div>';
