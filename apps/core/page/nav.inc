@@ -33,7 +33,7 @@ class zNav {
                 $check = "select * from category_list where parent_id='.$cat->id.'";
                 $scatListQuery = "select * from category_list where parent_id='$cat->id' and status=1 limit 0,12";
                 $scatList = $dbm->get_results($scatListQuery);
-                echo '<li><a href="#_" class="megamenu_drop">' . $cat->title . '</a>';
+                echo '<li><a href="#_" class="megamenu_drop" >' . $cat->title . '</a>';
                 if ($scatList) {
                     echo '<div class="dropdown_fullwidth">
                  <div class="col_12">

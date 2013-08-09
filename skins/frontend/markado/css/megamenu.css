@@ -124,10 +124,11 @@ TABLE OF CONTENTS
     transition: background 0.5s ease;
 }
 .megamenu > li > a {
- 
+
     outline:0;
     text-decoration:none;
     display:block;
+
     padding: 7px 15px 17px 15px;
 }
 .megamenu > li .megamenu_drop {
@@ -602,7 +603,7 @@ TABLE OF CONTENTS
     transition: opacity 0.3s ease-in-out;  
 }
 .truste{
-    
+
 }
 
 /* 6. Paragraph Icons */
@@ -842,15 +843,15 @@ TABLE OF CONTENTS
 
 .megamenu_dark_bar {
     background: #ff312d;
-   /* background: -webkit-linear-gradient(top,#333333 0%,#181818);
-    background: -moz-linear-gradient(top,#333333 0%,#181818);
-    background: -o-linear-gradient(top,#333333 0%,#181818);
-    background: -ms-linear-gradient(top,#333333 0%,#181818);
-    background: linear-gradient(top,#333333 0%,#181818);	
-    border: 1px solid #171717;
-    -webkit-box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
-    -moz-box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
-    box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
+    /* background: -webkit-linear-gradient(top,#333333 0%,#181818);
+     background: -moz-linear-gradient(top,#333333 0%,#181818);
+     background: -o-linear-gradient(top,#333333 0%,#181818);
+     background: -ms-linear-gradient(top,#333333 0%,#181818);
+     background: linear-gradient(top,#333333 0%,#181818);	
+     border: 1px solid #171717;
+     -webkit-box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
+     -moz-box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
+     box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
     */
 }
 .megamenu_dark_bar .megamenu {

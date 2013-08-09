@@ -96,8 +96,11 @@ else {
     $h->js(0, 'jquery.min');
     //$h->js(0, 'bootstrap.min');
     $h->js(0, 'bootstrap.min');
+    $h->js(0, 'jquery.fittext');
     echo '<script>
 $(".carousel").carousel();
+
+$(".megamenu_drop").fitText(1.2);
 </script>';
     //slider
     //slide
