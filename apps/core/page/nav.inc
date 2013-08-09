@@ -37,7 +37,8 @@ class zNav {
                 if ($scatList) {
                     echo '<div class="dropdown_fullwidth">
                  <div class="col_12">
-                        <h2>' . $cat->title . ' Kategorisine Ait Tüm Alt Kategoriler</h2>
+                        <h1>' . $cat->title . ' Kategorisine Ait Tüm Alt Kategoriler</h1>
+                            </hr>
                 </div>
                  <div class="col_3 responsive_halfs">
                     
@@ -50,8 +51,19 @@ class zNav {
                     echo '</ul>   
                          
                     </div>
-                <div class="col_3 responsive_halfs" >';
-                    echo '<ul id="s_' . $scat->id . '" class="sbn">';
+                <div class="col_6 responsive_halfs" >';
+                    foreach ($scatList as $scat) {
+                    $subCatQuery ="select * from category_list where parent_id='$scat->id' and status='1'";
+                    $subCatS = $dbm->get_results($subCatQuery);
+                    echo '<ul id="s_'.$scat->id.'">';
+                    foreach($subCatS as $subCat){
+                        
+                       // echo $subCat->id.'--'.$scat->id.'</br>';
+                        echo  '<li><a href="" title="'.$subCat->title.'">'.$subCat->title.'</a></li>';
+                    }
+                    echo '<ul>';
+                    }
+           /*         echo '<ul id="s_' . $scat->id . '" class="sbn">';
                     
                     foreach ($scatList as $scat) {
                         $sTlistquery = "select * from category_list where parent_id='$scat->id' and status=1";
@@ -64,8 +76,9 @@ class zNav {
                         }
                     }
                     echo '</ul>';
-                   
+             */      
                     echo '</div>
+                <div class="col_3 responsive_halfs" >ürün</div>        
                 
     </div>';
                 }
