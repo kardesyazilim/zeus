@@ -53,13 +53,15 @@ class zNav {
                     </div>
                 <div class="col_6 responsive_halfs" >';
                     foreach ($scatList as $scat) {
-                    $subCatQuery ="select * from category_list where parent_id='$scat->id' and status='1'";
+                    $subCatQuery ="select * from category_list where parent_id='$scat->id' and status='1' limit 0,12";
                     $subCatS = $dbm->get_results($subCatQuery);
                     echo '<ul id="s_'.$scat->id.'" class="sbn">';
+                    if($subCatS){
                     foreach($subCatS as $subCat){
                         
                        // echo $subCat->id.'--'.$scat->id.'</br>';
                         echo  '<li class="col_4 responsive_halfs mg"><a href="" title="'.$subCat->title.'">'.$subCat->title.'</a></li>';
+                    }
                     }
                     echo '<ul>';
                     }
