@@ -72,6 +72,9 @@ body{
 /**/
 .markado_nav {
     background: #ff312d;
+    
+    border-left: 1px solid #ff312d;
+    border-right: 1px solid #ff312d;
     /* background: -webkit-linear-gradient(top,#333333 0%,#181818);
      background: -moz-linear-gradient(top,#333333 0%,#181818);
      background: -o-linear-gradient(top,#333333 0%,#181818);

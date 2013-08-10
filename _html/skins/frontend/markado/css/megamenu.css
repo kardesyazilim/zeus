@@ -135,7 +135,7 @@ TABLE OF CONTENTS
 .megamenu li .dropdown_fullwidth,
 .megamenu li .dropdown_multilevel {
     position: absolute;
-    margin:-7px 0 0 0;
+    margin:-8px 0 0 0;
     padding-top:24px;
     padding-bottom:10px;
     left:-9999em;
@@ -829,10 +829,16 @@ TABLE OF CONTENTS
 .megamenu_light .megamenu li .dropdown_container,
 .megamenu_light .megamenu li .dropdown_fullwidth,
 .megamenu_light .megamenu li .dropdown_flyout li ul {
-    border:1px solid #CCCCCC;
+    border:1px solid #ff312d;
+   
     border-top-width: 0;
-    background: #FAFAFA;
+    background: rgba(255,255,255,0.4);
+    -webkit-box-shadow:inset 0px 3px 6px rgba(255,255,255,0.4);
+    -moz-box-shadow:inset 0px 3px 6px rgba(255,255,255,0.4);
+    box-shadow:inset 0px 3px 6px rgba(255,255,255,0.4);
     color: #212121;
+  
+   
 }
 .megamenu_container_vertical .megamenu li .dropdown_container,
 .megamenu_container_vertical .megamenu li .dropdown_fullwidth,
