@@ -30,14 +30,5 @@ $(document).ready(function() {
         title: false
 
     });*/
-    $('.ftm').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 500);
-    });
-    //mcarousel
-    $('#s_34').hide();
-    $('#s_35').hide();
-    $('#s_36').hide();
-    $('#s_37').hide();
-    $('#s_38').hide();
-    $('#s_39').hide();
+  
 });

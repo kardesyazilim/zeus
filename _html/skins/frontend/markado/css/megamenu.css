@@ -88,41 +88,8 @@ TABLE OF CONTENTS
 
 
 
-.megamenu_container {
-    width:100%;
-    height: 36px;
-    *height: 34px;
-    margin:0 auto;
-    position: relative;
-    z-index:9999;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
 
-}
-.megamenu {
-    list-style:none;
-    padding:0;
-    position:relative; /* For IE7 */
-    margin:0;
-    font-family:'HelveticaNeue',Sans-Serif;
-    font-weight: bold;
-    font-size:1.2em;
-    line-height:1;
-}
-.megamenu > li {
-    float:left;
-    margin:0;
-    border:none;
-    height: 36px;
-    *height: 34px;
-    -webkit-transition: background 0.5s ease;
-    -moz-transition: background 0.5s ease;
-    -o-transition: background 0.5s ease;
-    -ms-transition: background 0.5s ease;
-    transition: background 0.5s ease;
-}
+
 .megamenu > li > a {
 
     outline:0;
@@ -841,57 +808,7 @@ TABLE OF CONTENTS
 /* 1. Dark Menu Bar */
 
 
-.megamenu_dark_bar {
-    background: #ff312d;
-    /* background: -webkit-linear-gradient(top,#333333 0%,#181818);
-     background: -moz-linear-gradient(top,#333333 0%,#181818);
-     background: -o-linear-gradient(top,#333333 0%,#181818);
-     background: -ms-linear-gradient(top,#333333 0%,#181818);
-     background: linear-gradient(top,#333333 0%,#181818);	
-     border: 1px solid #171717;
-     -webkit-box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
-     -moz-box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
-     box-shadow:inset 0px 0px 2px rgba(40,40,40,0.7);
-    */
-}
-.megamenu_dark_bar .megamenu {
-    color:#FFFFFF;
-}
-.megamenu_dark_bar .megamenu > li:hover, 
-.megamenu_dark_bar .megamenu > li.active {
-    background: rgba(255,255,255,0.4);
-    -webkit-box-shadow:inset 0px 3px 6px rgba(255,255,255,0.4);
-    -moz-box-shadow:inset 0px 3px 6px rgba(255,255,255,0.4);
-    box-shadow:inset 0px 3px 6px rgba(255,255,255,0.4);
-}
-.megamenu_dark_bar .megamenu li.noactive {
-    background:none;
-    -webkit-box-shadow:none;
-    -moz-box-shadow:none;
-    box-shadow:none;
-}
-.megamenu_dark_bar .megamenu > li > a {
-    color:#FFFFFF;
-    text-shadow:1px 1px 1px #000000;
-}
-.megamenu_dark_bar .megamenu > li:hover > a {
-    color:#FFFFFF;
-    text-shadow:1px 1px 1px #000000;
-}
-.megamenu_dark_bar .megamenu > li .megamenu_drop {
-    /*background:url("../img/dropdown.png") no-repeat right 18px;*/
-}
-.megamenu_dark_bar .megamenu_vertical > li .megamenu_drop {
-    background:url("../img/right.png") no-repeat right 16px;
-}
-.megamenu_dark_bar .megamenu li.megamenu_button,
-.megamenu_dark_bar .megamenu li.megamenu_button:hover {
-    background:url("../img/dropdown.png") no-repeat right 19px;
-}
-.megamenu_dark_bar .megamenu li.megamenu_button_active,
-.megamenu_dark_bar .megamenu li.megamenu_button_active:hover {
-    background:url("../img/dropdown-up.png") no-repeat right 18px;
-}
+
 
 
 /* 2. Light Menu Bar */
