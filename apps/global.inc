@@ -19,8 +19,8 @@ define('CN', ':');
 define('DEMOFOLDER', $demoFolder);
 
 if (DFPORT == '80' || DPORT == '443') {
-    define('DOMAIN', DTYPE . CN . DS . DS . DNAME . DS . DEMOFOLDER . DS);
-    define('CDN', DFTYPE . CN . DS . DS . DFILE . DS . DEMOFOLDER . DFPATH . DS);
+    define('DOMAIN', DTYPE . CN . DS . DS . DNAME . DS . DEMOFOLDER );
+    define('CDN', DFTYPE . CN . DS . DS . DFILE . DS . DEMOFOLDER . DFPATH.DS );
 } else {
     define('DOMAIN', DTYPE . CN . DS . DS . DNAME . CN . DPORT . DS . DEMOFOLDER);
     define('CDN', DFTYPE . CN . DS . DS . DFILE . CN . DFPORT . DS . DEMOFOLDER . DFPATH );

@@ -42,14 +42,40 @@ if ($q[0] == '') {
     $h->css(3, 'megamenu');
     $h->css(3, 'resize');
     $h->begin();
-    $p->home($dbm, $c);
+    //$p->home($dbm, $c);
+    echo '<div id="maintenance">';
+    echo '<div class="container">';
+    echo '<div class="row-fluid">';
+    echo '<div class="span12" style="margin:10px 0 0 0;">';
 
+    echo '<div class="alert alert-error">';
+    //echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+
+    echo '<strong>Uyarı !</strong>';
+    echo '<p>Site şuanda Maintence Moda bakım çalışması yapılıyor. Kısa bir süre sonra tekrar deneyiniz.</p> ';
+    echo '<p><address>
+  <strong>Markado </strong>Elektronik Hizmetler ve Tic. A.Ş.<br>
+  Ak Plaza Kat:1 Necip Fazıl Sk. No:8<br>
+  Kavacık 34810, İstanbul<br>
+  <abbr title="Telefon">T:</abbr>  0850 2013 300
+</address>
+ 
+<address>
+  <strong>Destek</strong><br>
+  <a href="mailto:destek@markado.com">destek@markado.com</a>
+</address></p>';
+    echo '<p class="text-right"><img src="media/main/img/markado-bakim.png" alt="Markado Bakım" /></p>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
     $h->js(0, 'jquery.min');
     //$h->js(0, 'bootstrap.min');
     $h->js(0, 'bootstrap.min');
-    echo '<script>
-$(".carousel").carousel();
-</script>';
+    /* echo '<script>
+      $(".carousel").carousel();
+      </script>'; */
     //slider
     //slide
     //$h->js(3, 'galleria');
@@ -58,10 +84,78 @@ $(".carousel").carousel();
     $h->end();
 } elseif ($q[0] == ADMINURL) {
     //Admin page
-    echo 'admin sayfası';
+    $h->css(0, 'bootstrap');
+    $h->css(0, 'bootstrap-responsive');
+    $h->css(2, 'supr-theme/jquery.ui.supr');
+    $h->css(2, 'icons');
+    $h->css(2, 'plugins/forms/uniform/uniform.default');
+
+    $h->css(2, 'main');
+
+    $h->loginPage();
+    //echo 'admin sayfası';
+    $p->login();
+    $h->js(0, 'jquery.min');
+    $h->js(0, 'bootstrap.min');
+   // $h->js(2, 'plugins/misc/touch-punch/jquery.ui.touch-punch.min');
+    $h->js(2, 'plugins/misc/ios-fix/ios-orientationchange-fix');
+    $h->js(2, 'plugins/forms/validate/jquery.validate.min');
+    $h->js(2, 'plugins/forms/uniform/jquery.uniform.min');
+    $h->js(2,'login');
+    
+            
+            
+    $h->end();
 } elseif ($q[0] == MOBILURL) {
     //Mobil page
-    echo 'mobil sayfası';
+    //echo 'mobil sayfası';
+    //check mobile header return
+    $h->css(0, 'bootstrap');
+    $h->css(0, 'bootstrap-responsive');
+    $h->css(3, 'base');
+    $h->css(3, 'megamenu');
+    $h->css(3, 'resize');
+    $h->begin();
+    //$p->home($dbm, $c);
+    echo '<div id="maintenance">';
+    echo '<div class="container">';
+    echo '<div class="row-fluid">';
+    echo '<div class="span12" style="margin:10px 0 0 0;">';
+
+    echo '<div class="alert alert-error">';
+    //echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+
+    echo '<strong>Uyarı !</strong>';
+    echo '<p>Site şuanda Maintence Moda bakım çalışması yapılıyor. Kısa bir süre sonra tekrar deneyiniz.</p> ';
+    echo '<p><address>
+  <strong>Markado </strong>Elektronik Hizmetler ve Tic. A.Ş.<br>
+  Ak Plaza Kat:1 Necip Fazıl Sk. No:8<br>
+  Kavacık 34810, İstanbul<br>
+  <abbr title="Telefon">T:</abbr>  0850 2013 300
+</address>
+ 
+<address>
+  <strong>Destek</strong><br>
+  <a href="mailto:destek@markado.com">destek@markado.com</a>
+</address></p>';
+    echo '<p class="text-right"><img src="http://mobil.markado.com/media/main/img/markado-bakim.png" alt="Markado Bakım" /></p>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    $h->js(0, 'jquery.min');
+    //$h->js(0, 'bootstrap.min');
+    $h->js(0, 'bootstrap.min');
+    /* echo '<script>
+      $(".carousel").carousel();
+      </script>'; */
+    //slider
+    //slide
+    //$h->js(3, 'galleria');
+    $h->js(3, 'menu');
+    $h->js(3, 'main');
+    $h->end();
 }
 //case
 else {

@@ -48,6 +48,11 @@ class zHtml {
         echo '<body>';
         
     }
+    public function loginPage(){
+        echo '</head>';
+        echo '<body class="loginPage">';
+        
+    }
 
     public function end() {
         //js block render
